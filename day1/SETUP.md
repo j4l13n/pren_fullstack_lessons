@@ -51,4 +51,11 @@ add `.babelrc` file in you directory
 ```
 
 
+> Create models
+
+sequelize model:create --name TableName --attribute <attribute-name>:data-type,...
+
+
+
+
 
