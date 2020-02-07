@@ -19,7 +19,7 @@ export default (sequelize, DataTypes) => {
   );
   Products.associate = function(models) {
     // associations can be defined here
-    Products.belongTo(models.Businesses, {
+    Products.belongsTo(models.Businesses, {
       foreignKey: "businessId",
       onDelete: "CASCADE"
     });

@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon --exec babel-node app.js"
+    "dev": "nodemon --exec babel-node app.js",
+    "start": "nodemon --exec babel-node app.js",
+    "migrate": "sequelize db:migrate"
   },
   "keywords": [],
   "author": "Karangwa Hirwa Julien <juliushirwa@gmail.com>",
@@ -16,7 +18,9 @@
     "babel-preset-env": "^1.7.0",
     "bcrypt": "^3.0.7",
     "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
     "morgan": "^1.9.1",
     "pg": "^7.18.1",
     "pg-hstore": "^2.3.3",

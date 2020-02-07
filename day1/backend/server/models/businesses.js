@@ -13,7 +13,7 @@ export default (sequelize, DataTypes) => {
       foreignKey: "businessId",
       onDelete: "CASCADE"
     });
-    Businesses.belongTo(models.Users, {
+    Businesses.belongsTo(models.Users, {
       as: "user",
       foreignKey: "userId",
       onDelete: "CASCADE"
